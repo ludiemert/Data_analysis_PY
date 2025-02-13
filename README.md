@@ -92,7 +92,7 @@ Feel free to contribute! If you have suggestions, open a **Pull Request** or an 
 
 Você foi contratado por uma empresa com mais de **800 mil clientes** para um projeto de análise de dados. A empresa identificou que a maioria de seus clientes já cancelaram o serviço e deseja entender os principais motivos desses cancelamentos, buscando ações eficazes para reduzir essa taxa.
 
-📂 **Base de Dados e Arquivos:** [Clique aqui para acessar](https://drive.google.com/drive/folders/1uDesZePdkhiraJmiyeZ-w5tfc8XsNYFZ?usp=drive_link)
+📂 **Base de Dados e Arquivos:**  [Click here to access](https://github.com/ludiemert/Data_analysis_PY)
 
 ---
 
