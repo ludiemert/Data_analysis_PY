@@ -8,6 +8,58 @@ You have been hired by a company with over **800,000 customers** for a data anal
 
 ---
 
+---
+
+<h4 align="center">Data_analysis_PY 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_proj/1 - grafico duracao_contrato.png" style="width: 90%;" alt="1 - grafico duracao_contrato.png">
+                <p style="margin-top: 5px;">1 - Grafico duracao_contrato</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_proj/2-grafico cancelou modelo assinatura.png" style="width: 90%;" alt="2-grafico cancelou modelo assinatura.png">
+                <p style="margin-top: 5px;">2-grafico cancelou modelo assinatura.png</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+<h4 align="center"> Data_analysis_PY 🚀 </h4>
+
+<div align="center">
+    <table>
+         <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_proj/3 - comando p ver os cancelados.png" style="width: 90%;" alt="3 - comando p ver os cancelados.png">
+                <p style="margin-top: 5px;">3 - comando p ver os cancelados</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_proj/4 resultado do plano de acao.png" style="width: 90%;" alt="4 resultado do plano de acao.png">
+                <p style="margin-top: 5px;">4 resultado do plano de acao</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+---
+
+
+  <br/>
+  <br/>
+
+
+
 ## 🚀 Project Step-by-Step
 
 ### 🔹 Step 1: Import the Database
