@@ -1,4 +1,90 @@
-Portugues
+# 📊 Python Insights - Analyzing Data with Python
+
+## 📝 Case - Customer Churn Analysis
+
+You have been hired by a company with over **800,000 customers** for a data analysis project. The company has identified that most of its customers have already canceled the service and wants to understand the main reasons behind these cancellations, aiming to implement effective actions to reduce this rate.
+
+📂 **Database and Files:** [Click here to access](https://github.com/ludiemert/Data_analysis_PY)
+
+---
+
+## 🚀 Project Step-by-Step
+
+### 🔹 Step 1: Import the Database
+```python
+import pandas as pd
+
+dataset = pd.read_csv("cancelamentos_sample.csv")
+```
+
+### 🔹 Step 2: View the Database
+```python
+dataset = dataset.drop(columns="CustomerID")
+display(dataset)
+```
+*We removed unnecessary columns to facilitate analysis.*
+
+### 🔹 Step 3: Data Cleaning and Preparation
+```python
+display(dataset.info())
+# Removing empty values
+dataset = dataset.dropna()
+display(dataset.info())
+```
+*We adjusted missing values to ensure accurate analysis.*
+
+### 🔹 Step 4: Initial Analysis of Cancellations
+```python
+display(dataset["canceled"].value_counts())
+display(dataset["canceled"].value_counts(normalize=True))
+```
+*We identified the proportion of active and canceled customers.*
+
+### 🔹 Step 5: Analyzing the Causes of Cancellations
+
+🔍 **How do the database columns impact cancellations?**
+
+```python
+import plotly.express as px
+
+for column in dataset.columns:
+    chart = px.histogram(dataset, x=column, color="canceled")
+    chart.show()
+```
+
+📌 **Key Insights:**
+1. **Customers with monthly contracts** have a high cancellation rate ➝ 📢 Offer discounts on annual and quarterly plans.
+2. **Customers who call the call center more than 4 times** are more likely to cancel ➝ 📞 Implement processes to resolve issues within 3 calls.
+3. **Customers who are more than 20 days late on payments** have a high chance of canceling ➝ 💳 Implement a policy to resolve delays within 10 days.
+
+### 🔹 Step 6: Applying Improvements and Measuring Impact
+```python
+dataset = dataset[dataset["contract_duration"] != "Monthly"]
+dataset = dataset[dataset["call_center_calls"] <= 4]
+dataset = dataset[dataset["days_late"] <= 20]
+
+display(dataset["canceled"].value_counts())
+display(dataset["canceled"].value_counts(normalize=True))
+```
+*We applied filters based on insights and checked for improvements in the cancellation rate.*
+
+---
+
+## 🛠 Technologies Used
+- **Language:** Python 🐍
+- **Libraries:** Pandas, NumPy, OpenPyXL, Plotly
+
+## 📌 Installing Dependencies
+```sh
+pip install pandas numpy openpyxl nbformat ipykernel plotly
+```
+
+## 📢 Contribution
+Feel free to contribute! If you have suggestions, open a **Pull Request** or an **Issue**. 🚀
+
+---
+
+### Portugues
 
 # 📊 Python Insights - Analisando Dados com Python
 
@@ -85,3 +171,35 @@ pip install pandas numpy openpyxl nbformat ipykernel plotly
 Sinta-se à vontade para contribuir! Caso tenha sugestões, abra um **Pull Request** ou uma **Issue**. 🚀
 
 ---
+
+---
+## License
+- This project is licensed under the MIT License.
+---
+
+
+### 📦 Contribution
+
+ - Feel free to contribute by submitting pull requests or reporting issues.
+
+- #### My LinkedIn - [![Linkedin Badge](https://img.shields.io/badge/-LucianaDiemert-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lucianadiemert/)](https://www.linkedin.com/in/lucianadiemert/)
+
+## 🌐 **Contact**
+<img align="left" src="https://www.github.com/ludiemert.png?size=150">
+
+#### [**Luciana Diemert**](https://github.com/ludiemert)
+
+🛠 Full-Stack Developer <br>
+🖥️ Python Enthusiast | Computer Vision | AI Integrations <br>
+📍 São Jose dos Campos – SP, Brazil
+
+<a href="https://www.linkedin.com/in/lucianadiemert" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" height="25"></a>&nbsp;
+<a href="mailto:lucianadiemert@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Gmail Badge" height="25"></a>&nbsp;
+<a href="#"><img src="https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white" title="LuDiem#0654" alt="Discord Badge" height="25"></a>&nbsp;
+<a href="https://www.github.com/ludiemert" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub Badge" height="25"></a>&nbsp;
+
+<br clear="left"/>
+
+---
+Developed with ❤ by [ludiemert](https://github.com/ludiemert).
+
